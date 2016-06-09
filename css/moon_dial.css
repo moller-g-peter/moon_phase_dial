@@ -1,0 +1,471 @@
+body{
+  margin: 0;
+}
+
+
+
+/* ---------- WHOLE CLOCK WRAPPER ---------- */
+
+
+
+
+#clockWrapper{
+  position: relative;
+  /*margin: 20px auto 0 auto;*/
+  z-index: 1;
+}
+#clock {
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  /*background: url(../img/clockface.jpg);*/
+  background: url(../img/Golden_clock_two.png);
+  list-style: none;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+#sec, #min, #hour {
+  position: absolute;
+  height: 600px;
+}
+#sec {
+  background: url(../img/sechand_gold.png);
+  width: 30px;
+  top: 150px;
+  left: 434px;
+  z-index: 20;
+} 
+#min {
+  background: url(../img/minhand_gold.png);
+  width: 30px;
+  top: 150px;
+  left: 434px;
+  z-index: 19;
+} 
+#hour {
+  background: url(../img/hourhand_gold.png);
+  width: 50px;
+  top: 151px;
+  left: 424px;
+  z-index: 18;
+}
+#romanNumbers > * {
+  position: absolute;
+  z-index: 11;
+}
+#romanNumbers{
+  position: absolute;
+  top: 149px;
+  left: 149px;
+}
+#I{
+  top: 80px;
+  left: 410px;
+  /*transform: rotate(30deg);*/
+}
+#II{
+  top: 166px;
+  left: 493px;
+  /*transform: rotate(60deg);*/
+}
+#III{
+  top: 283px;
+  left: 528px;
+  /*transform: rotate(90deg);*/
+}
+#IV{
+  top: 401px;
+  left: 493px;
+  /*transform: rotate(120deg);*/
+}
+#V{
+  top: 495px;
+  left: 409px;
+  /*transform: rotate(155deg);*/
+}
+#VI{
+  top: 527px;
+  left: 281px;
+  /*transform: rotate(180deg);*/
+}
+#VII{
+  top: 485px;
+  left: 153px;
+  /*transform: rotate(-150deg);*/
+}
+#VIII{
+  top: 388px;
+  left: 66px;
+  /*transform: rotate(-120deg);*/
+}
+#IX{
+  top: 282px;
+  left: 46px;
+  /*transform: rotate(-90deg);*/
+}
+#X{
+  top: 163px;
+  left: 73px;
+  /*transform: rotate(-60deg);*/
+}
+#XI{
+  top: 71px;
+  left: 155px;
+  /*transform: rotate(-30deg);*/
+}
+#XII{
+  top: 48px;
+  left: 271px;
+}
+
+
+
+/* ---------- MOON DIAL DISC ---------- */
+
+
+
+
+#gradientDisc{
+  position: absolute;
+  top: 207px;
+  left: 204px;
+  width: 484px;
+  height: 484px;
+  background: url(../img/gradient_circle_celest.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+  /*transform: rotate(25deg);*/
+}
+#gradientDisc * {
+  position: absolute;
+/*transform: rotate(25deg);*/
+}
+.sunY_low{
+  top: 45px;
+  left: 208px;
+}
+.sunY_high{
+  top: 45px;
+  left: 208px;
+  transform: rotate(25deg);
+  z-index: 2;
+}
+.star1_1{
+  top: 316px;
+  left: 107px;
+}  
+.star1_2{
+  top: 317px;
+  left: 106px;
+  transform: rotate(-4deg);
+}
+.star2_1{
+  top: 428px;
+  left: 166px;
+}
+.star2_2{
+  top: 427px;
+  left: 167px;
+}
+.star3_1{
+  top: 328px;
+  left: 316px;
+}  
+.star3_2{
+  top: 328px;
+  left: 316px;
+  transform: rotate(5deg);
+}
+.star4_1{
+  top: 378px;
+  left: 206px;
+}  
+.star4_2{
+  top: 378px;
+  left: 207px;
+}
+.star5_1{
+  top: 378px;
+  left: 106px;
+}  
+.star5_2{
+  top: 378px;
+  left: 107px;
+}
+.star6_1{
+  top: 408px;
+  left: 356px;
+}  
+.star6_2{
+  top: 408px;
+  left: 356px;
+}
+.star7_1{
+  top: 308px;
+  left: 386px;
+}  
+.star7_2{
+  top: 308px;
+  left: 386px;
+}
+.star8_1{
+  top: 353px;
+  left: 406px;
+}  
+.star8_2{
+  top: 355px;
+  left: 156px;
+}
+.star9_1{
+  top: 343px;
+  left: 66px;
+}  
+.star9_2{
+  top: 343px;
+  left: 66px;
+}
+/*.shootingStar{
+  top: 379px;
+  left: 420px;
+  transform: rotate(70deg);
+}*/
+.shootingStar{
+  top: 437px;
+  /*left: 545px;*/
+  left: 467px;
+  transform: rotate(73deg);
+}
+.cloud_big{
+  top: 75px;
+  left: -150px;
+  z-index: 3;
+}
+.cloud_medium{
+  top: 53px;
+  left: 200px;
+  z-index: 3;
+}
+.cloud_small{
+  top: 70px;
+  left: 0;
+  z-index: 3;
+}
+.cloud_micro{
+  top: 100px;
+  left: 10px;
+  z-index: 3;
+}
+.moon{
+  top: 390px;
+  left: 246px;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(-60deg);
+  /*z-index: 1;*/
+}
+.fallingStar{
+  top: 282px;
+  left: 226px;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(-180deg);
+}
+
+
+
+/* ---------- ZODIAC SIGNS ---------- */
+
+
+
+#zodiacSigns{
+  position: absolute;
+  z-index: 2;
+}
+#zodiacSigns > * {
+  position: absolute;
+  z-index: 3;
+}
+#zodiacSigns > img{
+  z-index: 3;
+}
+#Aquarius{
+  top: 417px;
+  left: 290px;
+  height: 57px;
+}
+#Pisces{
+  top: 416px;
+  left: 290px;
+  height: 59px;
+}
+#Aries{
+  top: 416px;
+  left: 285px;
+  height: 57px;
+}
+#Taurus{
+  top: 417px;
+  left: 281px;
+  height: 57px;
+}
+#Gemini{
+  top: 418px;
+  left: 280px;
+  height: 52px;
+}
+#Cancer{
+  top: 414px;
+  left: 285px;
+  height: 59px;
+  transform: rotate(11deg);
+}
+#Leo{
+  top: 415px;
+  left: 285px;
+  height: 59px;
+}
+#Virgo{
+  top: 416px;
+  left: 288px;
+  height: 59px;
+}
+#Libra{
+  top: 416px;
+  left: 284px;
+  height: 57px;
+}
+#Scorpio{
+  top: 415px;
+  left: 291px;
+  height: 59px;
+  transform: rotate(11deg);
+}
+#Sagittarius{
+  top: 417px;
+  left: 281px;
+  height: 57px;
+}
+#Capricorn{
+  top: 416px;
+  left: 288px;
+  height: 57px;
+  /*z-index: 3;*/
+}
+
+
+
+/* ---------- Months ---------- */
+
+
+
+
+#monthName{
+  position: absolute;
+}
+
+#Jan,#Feb,#Mar,
+#Apr,#May,#Jun,
+#Jul,#Aug,#Sep,
+#Oct,#Nov,#Dec{
+  position: absolute;
+  top: 439px;
+  left: 514px;
+  width: 60px;
+  z-index: 10;
+}
+
+
+
+/* ---------- Dates ---------- */
+
+
+/*#numbersLeft,
+#numbersRight{
+  position: absolute;
+}*/
+#numbersLeft,
+#numbersLeft > * {
+  position: absolute;
+  top: 218px;
+  left: 291px;
+  height: 25px;
+  z-index: 10;
+}
+#numbersRight,
+#numbersRight > * {
+  position: absolute;
+  top: 218px;
+  left: 308px;
+  height: 25px;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.forest{
+  position: relative;
+}
+
+.T1{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+.T1 * {
+  position: absolute;
+}*/
+
+/*.topBranch{ 
+  left: 240px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent; 
+  border-right: 16px solid transparent;
+  border-bottom: 32px solid red;
+}
+.middleBranch{
+  left: 225px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-bottom: 50px solid red;
+}
+.bottomBranch{
+  left: 211px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-left: 44px solid transparent;
+  border-right: 44px solid transparent;
+  border-bottom: 89px solid red;
+}
+.treeFoot{
+  top: 80px;
+  left: 250px;
+  width: 10px;
+  height: 50px;
+  background-color: red;
+}*/
+
+
+/*.starBox{
+  position: relative;
+}*/
+
+
+
+
+
